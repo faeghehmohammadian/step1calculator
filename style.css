@@ -1,0 +1,255 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url("//db.onlinewebfonts.com/t/623c7118249e082fe87a78e08506cb4b.eot");
+}
+
+*{
+    margin: 0;
+    overflow: hidden;
+    font-family: "Segoe UI";
+}
+.container{
+    min-width:600px;
+    min-height:600px;
+    width:100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 4.5% 30.5% 65%;
+    grid-template-areas:
+    'header header'
+    'result history'
+    'buttons history';
+}
+.header {
+    background-color: rgb(245, 245, 245);;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.leftheader{
+    display: flex;
+    justify-content: flex-start;
+}
+.headerWin {
+    display: flex;
+    justify-content: flex-end;
+}
+    
+.headerText {
+    display: flex;
+    align-self: flex-start;
+    padding: 3px 3px 3px 1px;
+    font-size:12px; 
+}
+.standardtext{  
+    padding: 0px 10px 3px 8px;
+    font-size:21px;
+    font-weight: 500;
+}
+    
+.headerWin div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+}
+
+.minimise {
+    font-size: 10px;
+    padding-bottom: 2px;
+}
+    
+.minimise:hover {
+    background-color: #cfcfcf;
+}
+    
+.maximise:hover {
+    background-color: #cfcfcf;
+}
+    
+.close {
+    font-size: 14px;
+}
+    
+.close:hover {
+    color: white;
+    background-color: red;
+}
+.result{
+    background-color: rgb(245, 245, 245);
+    grid-area: result;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.buttons{
+    background-color:rgb(245, 245, 245);
+    grid-area: buttons;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+.history{
+    background-color:rgb(245, 245, 245);
+    grid-area: history;
+    
+}
+.appicondiv{
+    align-self: flex-start;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+.appicon{
+    width: 13px;
+    height: 13px;
+}
+
+.btn{
+    background-color:rgb(255, 255, 255);
+    width: 24.5%;
+    height: 16%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border:1px solid rgb(226, 225, 225);
+}
+.btn:hover{
+    background-color: rgb(240, 240, 240) ;
+}
+.btnoper{
+    background-color:  rgb(255, 255, 255);
+    width: 24.5%;
+    height: 16%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    border:1px solid rgb(226, 225, 225);
+}
+.btnoper:hover{
+    background-color: rgb(240, 240, 240) ;
+}
+.btnfunc{
+    background-color:  rgb(255, 255, 255);
+    width: 24.5%;
+    height: 16%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border:1px solid rgb(226, 225, 225);
+}
+.btnfunc:hover{
+    background-color: rgb(240, 240, 240) ;
+}
+.btnequal{
+    background-color:  rgb(48, 82, 196);
+    width: 24.5%;
+    height: 16%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border:1px solid rgb(48, 82, 196);
+
+}
+.btnequal:hover{
+    background-color: rgb(62, 95, 202) ;
+}
+.standard{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.keep-btn-img {
+    width: 18px;
+    height: 18px;
+    padding: 10px 10px 12px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+.keep-btn-img:hover{
+    background-color: rgb(233, 233, 233) ;
+}
+.zero{
+    font-size: 45px;
+    align-self: flex-end;
+    margin-right: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+.smallbtn{
+    border-radius: 4px;
+    float: left;
+    width: 6vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.radical{
+    width:20px;
+}
+.smallbtn:hover{
+    background-color: rgb(233, 233, 233) ;
+}
+.hisbtn{
+    float: left;
+    width: 70px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 3px 3px 15px;
+}
+.hisbtn:hover{
+    text-decoration:  underline 5px;
+    text-decoration-color: rgb(25, 114, 155);
+    text-underline-offset: 0.5em
+}
+.menu{
+    float: left;
+    width: 40px;
+    height: 35px;
+    font-size:15px;
+    display: flex;
+    opacity: 0.7;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+.menu:hover{
+    background-color: rgb(192, 188, 188) ;
+}
+.btnicon{
+    
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnicon:hover{
+    background-color: rgb(192, 188, 188) ;
+}
+
+.nohistory {
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size:13px;
+}
