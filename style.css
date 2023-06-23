@@ -128,8 +128,8 @@
 }
 .btnoper{
     background-color:  rgb(255, 255, 255);
-    width: 24.5%;
-    height: 16%;
+    width: 19.6%;
+    height: 19.2%;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -142,8 +142,8 @@
 }
 .btnfunc{
     background-color:  rgb(255, 255, 255);
-    width: 24.5%;
-    height: 16%;
+    width: 19.6%;
+    height: 19.2%;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -156,8 +156,8 @@
 }
 .btnequal{
     background-color:  rgb(48, 82, 196);
-    width: 24.5%;
-    height: 16%;
+    width: 19.6%;
+    height: 19.2%;
     border-radius: 4px;
     display: flex;
     align-items: center;
